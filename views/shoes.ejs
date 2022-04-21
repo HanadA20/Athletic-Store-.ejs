@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="col-sm-6">
+    </div>
+    <div class="col-sm-6">
+      <h1 class="title">Shoes</h1>
+      <h1>Shoe Selection</h1>
+
+      <% offeredShoes.forEach(shoes => { %>
+      <h5>
+        <%= shoes.title %>
+      </h5>
+
+      <img src='<%= shoes.img %>'>
+      <input type="checkbox" id="selectShoe" value="selectShoe">
+            
+      <span>$
+        <%= shoes.cost %> </span>
+      <% }); %>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
